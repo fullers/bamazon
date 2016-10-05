@@ -1,4 +1,4 @@
-# bamazon
+# Bamazon
 An amazon like application that uses node.js and connects to a MySQL Database to keep track of inventory. 
 
 ## Technologies used
