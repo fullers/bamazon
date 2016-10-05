@@ -22,7 +22,7 @@ The BamazonCustomer.js file shows a table of the products created in the Bamazon
 ![Alt Text](/images/BamazonCustomer/working-BamazonCustomerjs.png?raw=true "Working version of BamazonCustomer.js")
 
 ### New Database Quantities
-![Alt Text](/images/BamazonCustomer/original-DBquantity.png?raw=true "New Database Quantities")
+![Alt Text](/images/BamazonCustomer/new-DBquantity.png?raw=true "New Database Quantities")
 
 ## Authors
 
