@@ -20,6 +20,9 @@
   "bugs": {
     "url": "https://github.com/fullers/bamazon/issues"
   },
+  "engines": {
+    "node": "6.6.0"
+  },
   "homepage": "https://github.com/fullers/bamazon#readme",
   "dependencies": {
     "cli-table2": "^0.2.0",

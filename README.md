@@ -10,6 +10,31 @@ An amazon like application that uses node.js and connects to a MySQL Database to
 	* MySQL  
 	* Inquirer
 
+## Requirements
+
+You will need to creat a file called connect.js and place the following code, replacing **Your username** and **Your Password** with the appropriate information:
+
+'''Javascript
+
+var mysql = require('mysql');
+
+var connection = mysql.createConnection({
+	host: 'localhost',
+	port: 3306,
+	user: 'Your username',
+	password: 'Your Password',
+	database: 'Bamazon'
+});
+
+connection.connect(function(err) {
+
+	if (err) throw err;
+});
+
+module.exports = connection;
+
+'''
+
 ## Challenge 1
 
 The BamazonCustomer.js file shows a table of the products created in the Bamazon Schema or Database from the Products table.  Then prompts the user to enter the id and quantity of the product they wish to purchase.  If there is enough of the product in stock it will give the customer the Total cost for that purchase then update the database accordingly. Otherwise will say "Insufficent quantity!" then prompt the user again for ID and quantity.  

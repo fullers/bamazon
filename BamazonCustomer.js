@@ -6,22 +6,11 @@ var inquirer = require('inquirer');
 var Table = require('cli-table2');
 
 // Require Connect.js
- // var connect = require('./connect.js');
- // var connection = connect;
+ var connect = require('./connect.js');
+ var connection = connect;
 
-var connection = mysql.createConnection({
-	host: 'localhost',
-	port: 3306,
-	user: 'root',
-	password: 'pass1234',
-	database: 'Bamazon'
-});
-
-connection.connect(function(err) {
-	
-	if (err) throw err;
-    display();
-});
+// Starts the application
+display();
 
 // Function that displays the product table.
 function display() {
