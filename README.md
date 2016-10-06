@@ -49,6 +49,9 @@ The BamazonCustomer.js file shows a table of the products created in the Bamazon
 ### New Database Quantities
 ![Alt Text](/images/BamazonCustomer/new-DBquantity.png?raw=true "New Database Quantities")
 
+### Insufficent Quantity
+![Alt Text](/images/BamazonCustomer/insufficent.png?raw=true "Insufficent Quantity")
+
 ## Authors
 
 * **Shaun** - *Javascript, SQL, Presentation* - [Shaun](https://github.com/fullers)
