@@ -14,7 +14,7 @@ An amazon like application that uses node.js and connects to a MySQL Database to
 
 You will need to creat a file called connect.js and place the following code, replacing **Your username** and **Your Password** with the appropriate information:
 
-'''Javascript
+```javascript
 
 var mysql = require('mysql');
 
@@ -33,7 +33,7 @@ connection.connect(function(err) {
 
 module.exports = connection;
 
-'''
+```
 
 ## Challenge 1
 
