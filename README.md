@@ -34,22 +34,23 @@ connection.connect(function(err) {
 module.exports = connection;
 
 ```
+## Getting Started
 
-## Challenge 1 - Bamazon Customer 
+### Challenge 1 - Bamazon Customer 
 
 The BamazonCustomer.js file shows a table of the products created in the Bamazon Schema or Database from the Products table.  Then prompts the user to enter the id and quantity of the product they wish to purchase.  If there is enough of the product in stock it will give the customer the Total cost for that purchase then update the database accordingly then prompt if they wish to continue shopping. If they choose yes then it will prompt the customer again for the ID and quantity. If they choose no then it will end the connection.  If the quantity is not less then or equal to what is in stoke it will display "Insufficent quantity!" then prompt the user again for ID and quantity.  
 
 
-### Orignal Database Quantities
+#### Orignal Database Quantities
 ![Alt Text](/images/BamazonCustomer/original-DBquantity.png?raw=true "Original Database Quantities")
 
-### Working version of BamazonCustomer.js 
+#### Working version of BamazonCustomer.js 
 ![Alt Text](/images/BamazonCustomer/working-BamazonCustomerjs.png?raw=true "Working version of BamazonCustomer.js")
 
-### New Database Quantities
+#### New Database Quantities
 ![Alt Text](/images/BamazonCustomer/new-DBquantity.png?raw=true "New Database Quantities")
 
-### Insufficent Quantity
+#### Insufficent Quantity
 ![Alt Text](/images/BamazonCustomer/insufficent.png?raw=true "Insufficent Quantity")
 
 ## Authors
@@ -59,7 +60,6 @@ The BamazonCustomer.js file shows a table of the products created in the Bamazon
 ## License
    
    None
-<<<<<<< HEAD
 
 ## Acknowledgments
 
