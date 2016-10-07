@@ -69,14 +69,14 @@ var viewProductsForSale = function() {
 	connection.query('SELECT * FROM Products', function(err, results){
 		
 		var table = new Table({
-			head: ['ID', 'Product Name', 'Price', 'Stock Quantity'],
+			head: ['ID', 'Product Name', 'Department Name', 'Price', 'Stock Quantity'],
 		   	//colWidths: [20, 200, 50]
 		});
 
 		for (var i=0; i <results.length; i++) {
 			table.push(
 
-				[results[i].id, results[i].ProductName, '$'+results[i].Price, results[i].StockQuantity]
+				[results[i].id, results[i].ProductName, results[i].DepartmentName, '$'+results[i].Price, results[i].StockQuantity]
 				
 			);
 			
@@ -95,13 +95,13 @@ var viewLowInventory = function() {
 		
 
 		var table = new Table({
-			head: ['ID', 'Product Name', 'Price', 'Stock Quantity'],
+			head: ['ID', 'Product Name', 'Department Name', 'Price', 'Stock Quantity'],
 		});
 
 		for (var i=0; i <results.length; i++) {
 			table.push(
 
-				[results[i].id, results[i].ProductName, '$'+results[i].Price, results[i].StockQuantity]
+				[results[i].id, results[i].ProductName, results[i].DepartmentName, '$'+results[i].Price, results[i].StockQuantity]
 				
 			);
 			
@@ -196,13 +196,13 @@ var addNewProduct = function() {
     }]).then(function(answer) { 
 
     	var price = parseInt(answer.price);
-    	var quant = parseInt(answer.quantity);
-    	var query = 'INSERT INTO Products (ProductName, DepartmentName, Price, StockQuantity) VALUES ("answer.productname","answer.department","price","quant")';
+    	var q = parseInt(answer.quantity);
+    	var query = "INSERT INTO Products (ProductName, DepartmentName, Price, StockQuantity) VALUES ("+mysql.escape(answer.productname)+","+mysql.escape(answer.department)+","+mysql.escape(price)+","+mysql.escape(q)+")";
     	connection.query(query, function(err,results){
 				if (err) throw err;
 		});
 
-    	    console.log("New Product Added:\n"+"Product Name:"+answer.productname);
+    	    console.log("The new product has been added to the inventory!");
 			continuePrompt();
 
 		})

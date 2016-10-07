@@ -2,6 +2,7 @@
 An amazon like application that uses node.js and connects to a MySQL Database to keep track of inventory. 
 
 ## Technologies used
+The following technologies, tools, and npm packages were used:
 * Javascript
 * MySQL Server and Workbench
 * Node.js
@@ -52,6 +53,34 @@ The BamazonCustomer.js file shows a table of the products created in the Bamazon
 
 #### Insufficent Quantity
 ![Alt Text](/images/BamazonCustomer/insufficent.png?raw=true "Insufficent Quantity")
+
+### Challenge 2 - Bamazon Manager
+
+The BamazonManger.js file is set of prompts for the managert to View Products for Sale, View Low Inventory, Add to Inventory, and Add New Product. Each prompt has its own function to handle the what needs to occur for that prompt.
+
+#### View Products for Sale 
+
+Shows the manager a table with all of the items available with the ID, Product Name, Department Name, Price, and Stock Quantity.
+
+![Alt Text](/images/BamazonManager/viewprod4sale.png?raw=true "View Products for Sale")
+
+#### View Low Inventory
+
+Shows the manager a table of all the items in inventory that is less than five.
+
+![Alt Text](/images/BamazonManager/viewlowinventory.png?raw=true "View Low Inventory")
+
+#### Add to Inventory
+
+Prompts the manager to enter the ID and the quantity of the product they want to increase.  After the data is enter, it will update the database or products table and increase the stock quantity by the amount specified for the ID provided.
+
+![Alt Text](/images/BamazonManager/add2inventory.png?raw=true "Add to Inventory") 
+
+#### Add New Product
+
+Prompts the manager to enter the Product Name, Department Name, price, and quantity.  Once entered the data then is inserted into the database in the Products table.
+
+![Alt Text](/images/BamazonManager/addnewprod.png?raw=true "Add New Product")
 
 ## Authors
 
