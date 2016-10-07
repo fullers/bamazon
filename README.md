@@ -59,7 +59,10 @@ The BamazonCustomer.js file shows a table of the products created in the Bamazon
 ## License
    
    None
+<<<<<<< HEAD
 
 ## Acknowledgments
 
 Thank you to Christi for the idea of using connection.end() and Lonnie for the idea of using the additonal prompt to allow the customer to continue shopping.
+=======
+>>>>>>> 141e3ccd3cfdae159a67fcd3fae9ae95731ceeff
