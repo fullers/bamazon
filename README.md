@@ -35,9 +35,9 @@ module.exports = connection;
 
 ```
 
-## Challenge 1
+## Challenge 1 - Bamazon Customer 
 
-The BamazonCustomer.js file shows a table of the products created in the Bamazon Schema or Database from the Products table.  Then prompts the user to enter the id and quantity of the product they wish to purchase.  If there is enough of the product in stock it will give the customer the Total cost for that purchase then update the database accordingly. Otherwise will say "Insufficent quantity!" then prompt the user again for ID and quantity.  
+The BamazonCustomer.js file shows a table of the products created in the Bamazon Schema or Database from the Products table.  Then prompts the user to enter the id and quantity of the product they wish to purchase.  If there is enough of the product in stock it will give the customer the Total cost for that purchase then update the database accordingly then prompt if they wish to continue shopping. If they choose yes then it will prompt the customer again for the ID and quantity. If they choose no then it will end the connection.  If the quantity is not less then or equal to what is in stoke it will display "Insufficent quantity!" then prompt the user again for ID and quantity.  
 
 
 ### Orignal Database Quantities
@@ -59,3 +59,7 @@ The BamazonCustomer.js file shows a table of the products created in the Bamazon
 ## License
    
    None
+
+## Acknowledgments
+
+Thank you to Christi for the idea of using connection.end() and Lonnie for the idea of using the additonal prompt to allow the customer to continue shopping.

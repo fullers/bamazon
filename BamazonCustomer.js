@@ -56,6 +56,26 @@ function updateDB(id, quantity) {
 
 }
 
+var continuePrompt = function() {
+    inquirer.prompt({
+        name: "action",
+        type: "list",
+        message: "Would like to continue shopping?",
+        choices: ["Yes", "No"]
+    }).then(function(answer) {
+        switch(answer.action) {
+            case 'Yes':
+                customerPrompt();
+            break;
+
+            case 'No':
+                connection.end();
+            break;
+        }
+    })
+};
+
+
 // Funtction to run the Iquirer package to prompt the customer for input (ID, Quantity).
 var customerPrompt = function() {
 	
@@ -89,6 +109,7 @@ var customerPrompt = function() {
             		updateDB(answer.id, answer.quantity);
             		var total = res[i].Price * answer.quantity;
             		console.log("Your total cost is $" + total + ".");
+            		continuePrompt();
             	} else {
             		console.log("Insufficent quantity!");
             		customerPrompt();
